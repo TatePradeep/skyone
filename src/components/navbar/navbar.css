@@ -1,0 +1,83 @@
+.nav{
+    position: absolute;
+    width: 1164px;
+    height: 114px;
+    top: 25px;
+    left: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    }
+    .skyone__nav-logo
+    {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;   
+        
+    }
+    .skyone__nav-logo .skyone{
+        margin-left: -10px;
+    }
+    .skyone__logo{
+        width: 43.13px;
+height: 46px;
+
+    }
+    
+    .nav-links{
+        display: flex;
+        gap: 50px;
+        margin-right: -40px;
+    }
+
+    .nav-liks-container ul li{
+        padding-left: 10px;
+    }
+    
+    li{
+        list-style: none;
+    }
+    
+    ul{
+        display: flex;
+        gap: 25px;
+    }
+    
+    .nav-links ul li a:hover{
+        cursor: pointer;
+        text-decoration: underline;
+        transition: all 0.3s ease;
+    }
+
+    
+    
+    li a{
+    text-decoration: none;
+    font-family: Magnolia;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    color: #361C10;
+    }
+
+    @media screen and (max-width:480px) {
+        .skyone__huambuger
+        {
+            width: 25px;
+           height: 18px;
+           margin-right: 900px;
+
+        }
+        .nav-liks-container{
+            display: none;
+        }
+        .nav{
+            display: flex;
+            float: right;
+        }
+
+
+    }
+
+    

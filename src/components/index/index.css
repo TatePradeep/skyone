@@ -1,0 +1,124 @@
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.skyone__index-container{
+    
+    display: flex;
+    flex-direction: row;
+    margin-left: 97px;
+    gap: 100px;
+    margin: 0;
+    padding: 0;
+    width: 98.9vw;
+    height: 1064px;
+    background-image: url('../../assets/index-background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    padding-bottom: 50px;
+    
+    
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    float: right;
+    align-items: center;
+    font-family: "Rufina", serif;
+font-size: 55px;
+font-weight: 400;
+line-height: 68px;
+letter-spacing: 0em;
+text-align: left;
+margin-top: 200px;
+opacity: 0.7;
+}
+
+.links a{
+    margin-top: 50px;
+    color: #361C1099;
+  text-decoration: none;
+  font-weight: normal; 
+  transition: font-weight 0.3s;
+}
+.links a:visited {
+    color: #361C1099;
+  }
+  
+  .links a:hover {
+    font-weight: bold; 
+  }
+  
+  .links a:active {
+    font-weight: bold; 
+  }
+.skyone__index-frame{
+    width: 383px;
+height: 777.5px;
+top: 190px;
+left: 97px;
+margin-left: 100px;
+margin-top: 200px;
+}
+
+.skyone__index-leftframe{
+  display: flex;
+  float: left;
+  display: none;
+}
+
+.skyone__index-rightframe{
+  display: flex;
+  float: right;
+  display: none;
+}
+
+@media screen and (max-width:480px){
+  .skyone__index-container
+  {
+    background-image: url('../../assets//mobile-background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: fixed;
+    margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+  }
+  
+  .skyone__index-leftframe{
+    display: flex;
+  float: left;
+  margin-top: 200px;
+  }
+
+  .skyone__index-frame{
+    display: none;
+  }
+
+  /* .skyone__index-rightframe{
+    display: flex;
+    float: right;
+    margin-top: 200px;
+    
+  } */
+  .links{
+    display: flex;
+    flex-direction: column;
+    float: right;
+    align-items: center;
+    font-family: Rufina;
+    font-size: 20px;
+font-weight: 300;
+letter-spacing: 0em;
+  }
+  .links a{
+    margin-top: 10px;
+  }
+  
+}
+

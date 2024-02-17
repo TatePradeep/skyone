@@ -1,0 +1,105 @@
+.footer{
+    width: 98.9vw;
+    height: 446px;
+    background-image: url('../../assets//footer-background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    position: absolute;
+    
+}
+
+.logo-social{
+width: Fixed (1,225px);
+height: Fixed (231px);
+display: flex;
+justify-content: space-between;
+margin-inline: 130px;
+margin-top: 20px;
+}
+
+.logo{
+width: Fixed (189px);
+height: Hug (69px);
+display: flex;
+align-items: center;
+margin-top: -40px;
+}
+
+.logo .skyone{
+    margin-left: -10px;
+}
+
+.address{
+width: Fixed (322px);
+height: Fill (231px);
+display: flex;
+justify-content: center;
+flex-direction: column;
+row-gap: 10px;
+margin-top: 40px;
+}
+
+.adr-title{
+    font-family: Garet;
+font-size: 25px;
+font-weight: 850;
+line-height: 36px;
+color: #000000;
+}
+
+.detail-adr{
+    font-family: Garet;
+font-size: 16px;
+font-weight: 300;
+line-height: 23px;
+color: #361C10;
+}
+
+.sm{
+font-family: Garet;
+font-size: 16px;
+font-weight: 850;
+line-height: 23px;
+color: #000000;
+text-decoration: none;
+}
+
+.sm:hover{
+    cursor: pointer;
+}
+
+.end{
+width: Fixed (1,225px);
+height: Fixed (231px);
+display: flex;
+justify-content: space-between;
+margin-inline: 130px;
+align-items: center;
+
+}
+
+
+.ec-p1{
+font-family: Garet;
+font-size: 16px;
+font-weight: 850;
+line-height: 23px;
+color: #000000;
+}
+
+.ec-p2{
+font-family: Garet;
+font-size: 100px;
+font-weight: 850;
+line-height: 145px;
+color:#361C10 ;
+}
+
+.end-logo:hover{
+    cursor: pointer;
+}
+
