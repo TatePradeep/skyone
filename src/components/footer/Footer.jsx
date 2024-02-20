@@ -5,8 +5,9 @@ import ELogo from '../../assets/arrow.png'
 
 const Footer = () => {
   return (
+    //main div
     <div className='footer'>
-
+      {/* first div having logo div and address div */}
         <div className="logo-social">
 
             <div className="logo">
@@ -16,17 +17,21 @@ const Footer = () => {
 
             <div className="address">
                <p className='adr-title'>Address</p>
-               <div>
+               {/* address-content div */}
+               <div className='address-content'>
                <p className='detail-adr'>Marollem Street 32, 7th Floor, Newlight</p>
                <p className='detail-adr'>Road, New York, USA.</p>
                </div>
+               {/* address-links div */}
+               <div className='sm-links'>
                <a className='sm' href='#Instagram'>Instagram</a>
                <a className='sm' href='#Linkdin'>Linkdin</a>
                <a className='sm' href='#Careers'>Careers</a>
-
+               </div>
             </div>
+         </div>
 
-        </div>
+{/* second div */}
 
         <div className="end">
 

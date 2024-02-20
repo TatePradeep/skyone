@@ -5,6 +5,7 @@ import Navbar from './components/navbar/Navbar'
 import Index from './components/index/Index'
 import Footer from './components/footer/Footer'
 
+
 function App() {
   const [count, setCount] = useState(0)
 

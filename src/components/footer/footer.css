@@ -1,6 +1,6 @@
 .footer{
     width: 98.9vw;
-    height: 446px;
+    height: full;
     background-image: url('../../assets//footer-background.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -10,6 +10,10 @@
     gap: 60px;
     position: absolute;
     
+}
+.sm-links{
+    display: flex;
+    flex-direction: column;
 }
 
 .logo-social{
@@ -101,5 +105,78 @@ color:#361C10 ;
 
 .end-logo:hover{
     cursor: pointer;
+}
+
+@media screen and (max-width:768px) {
+    .footer{
+        margin-right: 20px;
+        
+    }
+    .logo-social{
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        
+    }
+    .logo{
+        margin-top: 10px;
+    }
+    .sm-links
+    {
+        display: flex;
+        flex-direction: row;
+        margin-left: -40px;
+        margin-top: 20px;
+        
+    }
+
+    .sm-links a{
+        padding-left: 40px;
+    }
+    
+    .address{
+        margin-left: 10px;
+    }
+    .address-content{
+        width: 322px;
+        height: 45px;
+        top: 90px;
+        left: 19px;
+
+    }
+    .end{
+        margin-left: 100px;
+    }
+    .end-content{
+        margin-left: -70px;
+        
+        
+    }
+    .ec-p1{
+        width: Hug (120px);
+        height: Hug (15px);
+        font-size: 10px;
+        font-weight: 850;
+        line-height: 15px;
+        letter-spacing: 0em;
+        text-align: left;
+
+    }
+
+    .ec-p2{
+        font-size: 20px;
+        margin-top: -40px;
+    }
+    .end-logo img{
+        margin-left: 60px;
+        width: 34px;
+        height: 36.21px;
+        top: 211px;
+        left: 299.99px;
+        Rotation:-40.23°;
+        margin-top: -30px;
+
+
+    }
 }
 

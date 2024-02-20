@@ -6,10 +6,5 @@
     background-repeat: no-repeat;
   } */
   
-  @media screen and (max-width: 480px) {
-    body {
-      background-image: url('./assets/mobile-background.png');
-      background-size: cover; /* You can adjust this value as needed */
-    }
-  }
+  
   
