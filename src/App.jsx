@@ -12,9 +12,11 @@ function App() {
   return (
     <>
     <section className='index'>
+
+      
       <Navbar/>
-      <Index/>
-      <Footer/>
+      {/* <Index/>
+      <Footer/> */}
       </section>
     </>
   )

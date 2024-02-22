@@ -7,6 +7,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 2rem;
     
     }
 
@@ -30,9 +31,6 @@ height: 46px;
 
     }
 
-    .skyone__huambuger{
-        margin-left: 10px;
-    }
     
     .nav-links{
         display: flex;
@@ -40,7 +38,7 @@ height: 46px;
         margin-right: -40px;
     }
 
-    .nav-liks-container ul li{
+    .nav-links-container ul li{
         padding-left: 5px;
     }
     
@@ -69,7 +67,116 @@ height: 46px;
     color: #361C10;
     }
 
+/* Menu Bar */
+
+
+.nav .nav-btn{
+    padding: 5px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: black;
+    visibility: visible;
+    opacity: 1;
+    font-size: 1.8rem;
+}
+
+.nav .nav-close-btn{
+    visibility: visible;
+    opacity: 0;
+}
+
+
+@media (min-width: 769px) {
+    .new-nav-links-content{
+        display: none;
+        
+    }
+    .nav .nav-btn{
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+
+
+/* Mobile view */
     @media screen and (max-width:768px) {
+        .nav .nav-btn{
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .nav .nav-links{
+position: fixed;
+top: 0;
+left: 0;
+height: 100%;
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: start;
+justify-content: center;
+gap: 1.5rem;
+background-color: #361C10;
+transition: 1s;
+transform: translateX(100vh);
+padding-left: 20px;
+ }
+
+ .nav .responsive_nav{
+    transform: none;
+ }
+
+ .nav-links .nav-close-btn{
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    color: burlywood;
+ }
+
+ .nav-links-container ul li{
+    font-size: 1.5rem;
+ }
+
+ .email-no{
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    bottom: 2rem;
+    width: 400px;
+    height: 120px;
+
+ }
+
+ .email-no p{
+    font-family: Garet;
+font-size: 16px;
+font-weight: 850;
+line-height: 9px;
+letter-spacing: 0em;
+text-align: left;
+color: #E6D5B8;
+padding-top: 30px;
+
+ }
+
+ .social-tags{
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    bottom: 2rem;
+    right: 0;
+    margin-right: 20px;
+ }
+
+ .social-tags h4{
+padding-top: 20px;
+color:#E6D5B8 ;
+ }
+
+
          .skyone__nav-logo{
             display: flex;
             float: inline-start;
@@ -79,21 +186,25 @@ height: 46px;
             height: 32px;
             top: 14px;
             left: 50px;
-            
+        }
+         .nav .skyone__nav-logo .skyone{
+            width: 75px;
+            height: 32px;
+}
 
-         }
-         .logo{
-            width: 20px;
-height: 19px;
-top: 22px;
-left: 20px;
+.nav .skyone__nav-logo .logo{
+    width: 60px;
+height: 59px;
+margin-top: -0.5px;
+}
 
-         }
 
-         .skyone{
+
+
+         .skyone img{
             font-family: SVN-Aire Pro;
-font-size: 24px;
-font-weight: 400;
+font-size: 14px;
+font-weight: 200;
 line-height: 40px;
 letter-spacing: 0.02em;
 text-align: left;
@@ -102,22 +213,31 @@ padding-top: 10px;
 
          }
 
-        .skyone__huambuger
-        {
-            width: 25px;
-           height: 18px;
-           margin-right: 50px;
-
-        }
-        .nav-liks-container{
-            display: none;
-        }
         .nav{
             display: flex;
-            width: 100%;
+            flex-direction: row;
+            width: 65%;
         }
+        .nav-links a {
+            color: #E6D5B8; 
+            text-decoration: none; 
+            transition: font-weight 0.3s ease;
+            font-family: Magnolia;
+font-size: 36px;
+font-weight: 400;
+line-height: 19px;
+letter-spacing: 0em;
+padding-top: 40px;
+ 
+          }
+
+          .nav-links a:hover {
+            font-weight: bold; 
+          }
 
 
     }
 
+
+  
     
