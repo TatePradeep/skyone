@@ -7,7 +7,8 @@ const Navbar = () => {
   return (
     <div className='nav'>
 <div className='skyone__nav-logo'>
-        <img src={FLogo} alt="" />
+  
+        <img  src={FLogo} alt="" />
         <img className="skyone" src={skyonelogo} alt="" />
         </div>
         <div className="nav-links">

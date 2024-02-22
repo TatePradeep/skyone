@@ -9,13 +9,18 @@
     justify-content: space-between;
     
     }
+
+    
     .skyone__nav-logo
     {
         display: flex;
-        align-items: center;
-        justify-content: space-between;   
-        
+        align-items: center; 
+        width: 195px;
+height: 65px;
+top: 20px;
+left: 176px;
     }
+
     .skyone__nav-logo .skyone{
         margin-left: -10px;
     }
@@ -23,6 +28,10 @@
         width: 43.13px;
 height: 46px;
 
+    }
+
+    .skyone__huambuger{
+        margin-left: 10px;
     }
     
     .nav-links{
@@ -32,7 +41,7 @@ height: 46px;
     }
 
     .nav-liks-container ul li{
-        padding-left: 10px;
+        padding-left: 5px;
     }
     
     li{
@@ -49,7 +58,6 @@ height: 46px;
         text-decoration: underline;
         transition: all 0.3s ease;
     }
-
     
     
     li a{
@@ -61,12 +69,44 @@ height: 46px;
     color: #361C10;
     }
 
-    @media screen and (max-width:480px) {
+    @media screen and (max-width:768px) {
+         .skyone__nav-logo{
+            display: flex;
+            float: inline-start;
+            flex-direction: row;
+            margin-left: -110px;
+            width: 77px;
+            height: 32px;
+            top: 14px;
+            left: 50px;
+            
+
+         }
+         .logo{
+            width: 20px;
+height: 19px;
+top: 22px;
+left: 20px;
+
+         }
+
+         .skyone{
+            font-family: SVN-Aire Pro;
+font-size: 24px;
+font-weight: 400;
+line-height: 40px;
+letter-spacing: 0.02em;
+text-align: left;
+
+padding-top: 10px;
+
+         }
+
         .skyone__huambuger
         {
             width: 25px;
            height: 18px;
-           margin-right: 900px;
+           margin-right: 50px;
 
         }
         .nav-liks-container{
@@ -74,7 +114,7 @@ height: 46px;
         }
         .nav{
             display: flex;
-            float: right;
+            width: 100%;
         }
 
 
