@@ -8,6 +8,13 @@ import { useRef } from 'react'
 const Navbar = () => {
 
   const navRef=useRef();
+  const desktopnavRef=useRef();
+
+  const desktopshowNavbar=()=>
+  {
+    desktopnavRef.current.classList.toggle("desktop_responsive_nav")
+  }
+
 const  showNavbar=()=>
 {
   navRef.current.classList.toggle("responsive_nav")
@@ -21,23 +28,57 @@ const  showNavbar=()=>
         <img className="skyone" src={skyonelogo} alt="" />
         </div>
 
-        <div  className="nav-links">
+        <div  className="nav-links-desktop">
             
            <a href="#">ABOUT</a>
            <a href="#">PROJECT</a>
            <a href="#">INDEX</a>
            <a href="#">CONTACT</a>
   
-        <button className='nav-btn nav-close-btn' onClick={showNavbar}>
-          <FaTimes/>
-        </button>   
-        <button className='nav-btn' onClick={showNavbar}>
-        <FaBars/>
-       </button>
+        
         
        </div>
-{/* new */}
-<div className='new-nav-links-content'>
+
+       {/* deskop-new */}
+       <div className='new-nav-links-content'>
+        <div ref={desktopnavRef} className="nav-links">
+            
+           <a href="#">01 ABOUT</a>
+           <a href="#">02 PROJECT</a>
+           <a href="#">03 INDEX</a>
+           <a href="#">04 CONTACT</a>
+
+           <div className='email-no'>
+            <p>project@skyone.co</p>
+            <p>(+44)0117 922 6892</p>
+           </div>
+
+           <div className='social-tags'>
+          <h4>T W I T T E R</h4>
+          <h4>I N S T A G R A M</h4>
+          <h4>L I N K E D I N</h4>
+          <h4>D R I B B L E</h4>
+          <h4>B E H A N C E</h4>
+           </div>
+  
+        <button className='nav-btn nav-close-btn' onClick={desktopshowNavbar}>
+          <FaTimes/>
+        </button>   
+       </div>
+       <button className='nav-btn' onClick={desktopshowNavbar}>
+        <FaBars/>
+       </button>
+       
+    </div>
+
+
+
+
+
+
+
+{/* mobile-new */}
+<div className='nav-links-content'>
         <div ref={navRef} className="nav-links">
             
            <a href="#">01 ABOUT</a>

@@ -67,6 +67,27 @@ height: 46px;
     color: #361C10;
     }
 
+    .nav-links-desktop
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 80px;
+    }
+
+    .nav-links-desktop a
+    {
+padding-left: 40px;
+text-decoration: none; 
+color: #361C10;
+;
+    }
+    .nav-links-desktop a:hover {
+        font-weight: bold; 
+      }
+
+
+
 /* Menu Bar */
 
 
@@ -87,6 +108,94 @@ height: 46px;
     opacity: 0;
 }
 
+.nav .nav-links{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    margin-left: 750px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 1.5rem;
+    background-color: #361C10;
+    transition: 1s;
+    transform: translateX(240vh);
+    padding-left: 20px;
+     }
+
+     .nav .responsive_nav{
+        transform: none;
+     }
+
+     .nav-links .nav-close-btn{
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        color: burlywood;
+     }
+
+     .nav-links-container ul li{
+        font-size: 1.5rem;
+     }
+    
+     .email-no{
+        display: flex;
+        position: fixed;
+        flex-direction: column;
+        bottom: 2rem;
+        width: 400px;
+        height: 120px;
+    
+     }
+    
+     .email-no p{
+        font-family: Garet;
+    font-size: 16px;
+    font-weight: 850;
+    line-height: 9px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #E6D5B8;
+    padding-top: 30px;
+    
+     }
+    
+     .social-tags{
+        display: flex;
+        position: fixed;
+        flex-direction: column;
+        bottom: 2rem;
+        right: 0;
+        margin-right: 20px;
+     }
+     
+ .social-tags h4{
+    padding-top: 20px;
+    color:#E6D5B8 ;
+     }
+     .nav-links a {
+        color: #E6D5B8; 
+        text-decoration: none; 
+        transition: font-weight 0.3s ease;
+        font-family: Magnolia;
+font-size: 36px;
+font-weight: 400;
+line-height: 19px;
+letter-spacing: 0em;
+padding-top: 40px;
+
+      }
+
+      .nav-links a:hover {
+        font-weight: bold; 
+      }
+
+
+
+
 
 @media (min-width: 769px) {
     .new-nav-links-content{
@@ -101,8 +210,19 @@ height: 46px;
 
 
 
+
 /* Mobile view */
     @media screen and (max-width:768px) {
+        .new-nav-links-content{
+            display: none;
+            
+        }
+
+        .nav-links-desktop
+        {
+            display: none;
+        }
+
         .nav .nav-btn{
             visibility: visible;
             opacity: 1;
@@ -114,6 +234,7 @@ top: 0;
 left: 0;
 height: 100%;
 width: 100%;
+margin-left: 0px;
 display: flex;
 flex-direction: column;
 align-items: start;
